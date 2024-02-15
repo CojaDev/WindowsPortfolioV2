@@ -2,32 +2,142 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow: hidden;
+}
+.startBtn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  transition: all 0.08s ease-in;
+}
+.startBtn:hover {
+  background-color: rgb(255, 255, 255, 10%);
+}
+.task {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  transition: all 0.08s ease-in;
+  margin-left: 2px;
+}
+.task.active {
+  border-bottom: 2px solid #83c0ef;
+}
+.task:hover {
+  background-color: rgb(255, 255, 255, 10%);
+}
+.info {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.08s ease-in;
+  margin-left: 3px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.info:hover,
+.line:hover {
+  background-color: rgb(255, 255, 255, 12%);
+}
+.notif {
+  @apply w-10 select-none;
+}
+.desktop {
+  height: calc(100% - 40px);
+}
+.icon:hover {
+  background-color: rgb(255, 255, 255, 12%);
+  border: 1px solid rgb(255, 255, 255, 18%);
+}
+.icon {
+  transition: background 0.05s ease-in;
+}
+.icon.active {
+  background-color: rgb(255, 255, 255, 17%);
+  border: 1px solid rgb(255, 255, 255, 18%);
+}
+.icon.active:hover {
+  background-color: rgb(255, 255, 255, 20%);
+  border: 1px solid rgb(255, 255, 255, 22%);
+}
+.contextMenu {
+  position: fixed;
+  transition: left 0.1s ease-out, top 0.1s ease-out;
+}
+.menuItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  transition: all 0.08s ease-in;
+}
+
+.menuItem:hover {
+  background-color: rgb(255, 255, 255, 12%);
+}
+.settings:hover {
+  background-color: rgb(0, 0, 0, 12%);
+  border: 1px solid rgb(255, 255, 255, 62%);
+}
+.shutdown:hover,
+.shutdown:hover .label {
+  border-color: white;
+}
+.app:hover {
+  background-color: rgba(92, 143, 255, 0.12);
+  border: 1px solid rgba(67, 117, 253, 0.62);
+}
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease;
+  min-width: 32px;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.574);
+}
+.action:hover {
+  background-color: rgba(130, 170, 255, 0.253);
+}
+.action:hover p {
+  color: white;
+}
+.action:hover.close {
+  background-color: rgba(255, 0, 0, 0.788);
+}
+.app-content {
+  height: calc(100% - 30px) !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b9b9b9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #505050;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #363636;
+}
+.apptray {
+  height: calc(100% - 36px);
 }
