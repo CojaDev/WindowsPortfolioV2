@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import React, { useState, useRef } from 'react';
 import Explorer from './Explorer';
-import { apps2, projects, recyclebin } from '@/constants/desktop';
+import { apps2 } from '@/constants/desktop';
 
-const Window = ({ activeApp, onClose, appName, appImg }) => {
+const Window2 = ({ activeApp, onClose, appName, appImg }) => {
   const [isMinimized, setIsMinimized] = useState(false);
 
   const handleClose = () => {
@@ -329,4 +329,4 @@ const Window = ({ activeApp, onClose, appName, appImg }) => {
   );
 };
 
-export default Window;
+export default Window2;

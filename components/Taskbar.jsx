@@ -5,12 +5,14 @@ import startBtnBlue from '../public/img/logo.png';
 import { INFO, TASKS } from '@/constants/tasks';
 import Startmenu from './Startmenu';
 import Window from './Window';
+import NotifBar from './NotifBar';
 
 const Taskbar = () => {
   const [openApps, setOpenApps] = useState([]);
 
   const [isHovered, setIsHovered] = useState(false);
   const [isToggled, setIsToggled] = useState(false);
+  const [ShowNotif, setShowNotif] = useState(false);
 
   const ClockCalendar = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
@@ -88,7 +90,13 @@ const Taskbar = () => {
       }
     }
   };
-
+  const toggleNotifbar = (info) => {
+    if (info.key === '6') {
+      setTimeout(() => {
+        setShowNotif(!ShowNotif);
+      }, 30);
+    }
+  };
   return (
     <>
       <section className="absolute flex bottom-0 left-0 w-full h-[40px] max-h-[40px] mb-[1px] bg-[#1a1a1a]/80">
@@ -125,7 +133,11 @@ const Taskbar = () => {
         ))}
         <div className="ml-auto flex">
           {INFO.map((info) => (
-            <div className={`info ${info.size}`} key={info.key}>
+            <div
+              className={`info ${info.size}`}
+              key={info.key}
+              onClick={() => toggleNotifbar(info)}
+            >
               {info.img !== '' ? (
                 <Image
                   src={info.img}
@@ -147,6 +159,15 @@ const Taskbar = () => {
           <div className=" h-[40px] w-[5px] border-l ml-2  border-white/50 line" />
         </div>
         {isToggled && <Startmenu openWindowInDesktop={openWindowInDesktop} />}
+
+        <NotifBar
+          isVisible={ShowNotif}
+          onHide={() => {
+            setTimeout(() => {
+              setShowNotif(!ShowNotif);
+            }, 30);
+          }}
+        />
       </section>
       {openApps.map((app) => (
         <Window

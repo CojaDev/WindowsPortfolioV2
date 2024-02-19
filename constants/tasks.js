@@ -59,7 +59,7 @@ export const INFO = [
   },
   {
     key: '6',
-    label: 'more',
+    label: 'Notifications', // Update label to a more descriptive one
     size: 'notif',
     img: '/img/popup.png',
   },

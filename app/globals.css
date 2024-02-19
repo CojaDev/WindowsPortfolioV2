@@ -51,7 +51,7 @@ body {
   background-color: rgb(255, 255, 255, 12%);
 }
 .notif {
-  @apply w-10 select-none;
+  @apply w-10;
 }
 .desktop {
   height: calc(100% - 40px);
