@@ -99,7 +99,7 @@ const Taskbar = () => {
   };
   return (
     <>
-      <section className="absolute flex bottom-0 left-0 w-full h-[40px] max-h-[40px] mb-[1px] bg-[#1a1a1a]/80">
+      <section className="absolute flex bottom-0 left-0 w-full h-[40px] max-h-[40px]  bg-[#1a1a1a]/80">
         <div
           className="startBtn"
           onMouseEnter={() => setIsHovered(true)}

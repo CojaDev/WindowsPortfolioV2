@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { apps } from '@/constants/desktop';
 import Image from 'next/image';
 import Window from './Window';
+import About from './About';
 
 const Desktop = () => {
   const [activeApp, setActiveApp] = useState(null);
@@ -219,7 +220,7 @@ const Desktop = () => {
           ref={selectRef}
         />
       )}
-
+      <About id="About2" />
       {/* Pass appName and appImg props to the Window component */}
       {openApp && appInfo && (
         <Window

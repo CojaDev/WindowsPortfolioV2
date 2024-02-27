@@ -141,3 +141,32 @@ body {
 .apptray {
   height: calc(100% - 36px);
 }
+.option {
+  background-color: rgb(100 100 102 / 0.8);
+  border: 1px solid transparent;
+  transition: all 0.08s ease-in;
+}
+.option:hover {
+  border-color: #ffffff9c;
+}
+.option:active {
+  transform: scale(0.98);
+}
+.option.active {
+  background: #1a87dbe5;
+}
+.nightLight {
+  transition: opacity 2s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.nightLight.active {
+  opacity: 1;
+}
+#About2 {
+  display: none;
+}
+#About2.active {
+  display: flex;
+}

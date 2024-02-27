@@ -79,7 +79,7 @@ const ContextMenu = ({ changebg }) => {
       {isVisible && (
         <div
           ref={menu}
-          className={`contextMenu w-[250px] font-sans font-extralight h-[250px] text-white bg-[#2b2b2b] border border-white transition-all delay-[10ms] gap-0.5 flex flex-col shadow-sm overflow-hidden px-1 py-0.5 shadow-black/80  select-none`}
+          className={`contextMenu w-[250px] font-sans font-extralight h-[250px] text-white bg-[#2b2b2b] border border-white z-30 transition-all delay-[10ms] gap-0.5 flex flex-col shadow-sm overflow-hidden px-1 py-0.5 shadow-black/80  select-none`}
           style={{ left: `${posX}px`, top: `${posY}px` }}
         >
           {/* Add your context menu items here */}

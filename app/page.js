@@ -22,6 +22,8 @@ export default function Home() {
           className="absolute top-0 right-0  w-full h-full object-cover select-none pointer-events-none"
         />
       </div>
+      <div className="nightLight h-screen w-screen bg-orange-950/25 absolute z-50 " />
+
       <Desktop />
       <Taskbar />
       <ContextMenu changebg={changebg} />

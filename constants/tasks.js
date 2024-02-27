@@ -64,3 +64,25 @@ export const INFO = [
     img: '/img/popup.png',
   },
 ];
+export const OPTIONS = [
+  {
+    key: '1',
+    label: 'About',
+    img: '/img/user.png',
+  },
+  {
+    key: '2',
+    label: 'Bluetooth',
+    img: '/img/bluetooth.png',
+  },
+  {
+    key: '3',
+    label: 'Night light',
+    img: '/img/sunny.png',
+  },
+  {
+    key: '4',
+    label: 'Airplane mode',
+    img: '/img/black-plane.png',
+  },
+];

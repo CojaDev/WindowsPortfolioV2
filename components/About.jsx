@@ -1,13 +1,15 @@
 'use client';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
-const About = ({ onClose }) => {
+const About = ({ onClose, id = 'About' }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const [position, setPosition] = useState({ left: 0, top: 0 });
+  const About = useRef();
   const handleClose = () => {
-    onClose();
+    if (onClose) onClose();
+    else About.current.classList.remove('active');
   };
   const handleMouseDown = (e) => {
     setIsDragging(true);
@@ -39,6 +41,8 @@ const About = ({ onClose }) => {
       style={{
         transform: `translate(${position.left}px, ${position.top}px)`,
       }}
+      id={id}
+      ref={About}
     >
       <div
         className="topbar h-[30px] flex justify-between w-full bg-black/95"
