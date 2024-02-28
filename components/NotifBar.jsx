@@ -91,6 +91,7 @@ const NotifBar = ({ isVisible, onHide }) => {
                   height={20}
                   width={20}
                   className="invert"
+                  draggable={false}
                 />
                 <p className="text-white text-xs  font-sans mt-auto">
                   {option.label}
@@ -107,6 +108,7 @@ const NotifBar = ({ isVisible, onHide }) => {
                 height={564}
                 width={564}
                 className="w-[55px] h-[55px]"
+                draggable={false}
               />
               <div className="msg text-white font-sans">
                 <h3 className="font-medium">CojaDev</h3>

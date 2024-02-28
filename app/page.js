@@ -1,6 +1,7 @@
 'use client';
 import ContextMenu from '@/components/ContextMenu';
 import Desktop from '@/components/Desktop';
+import LockScreen from '@/components/LockScreen';
 import Taskbar from '@/components/Taskbar';
 
 import { useState } from 'react';
@@ -23,7 +24,7 @@ export default function Home() {
         />
       </div>
       <div className="nightLight h-screen w-screen bg-orange-950/25 absolute z-50 " />
-
+      <LockScreen />
       <Desktop />
       <Taskbar />
       <ContextMenu changebg={changebg} />

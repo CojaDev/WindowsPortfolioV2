@@ -170,3 +170,14 @@ body {
 #About2.active {
   display: flex;
 }
+.LockScreen {
+  opacity: 0;
+
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+.LockScreen.active {
+  display: flex;
+  opacity: 1;
+  pointer-events: all;
+}
