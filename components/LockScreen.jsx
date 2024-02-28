@@ -7,7 +7,7 @@ const LockScreen = () => {
   const LockScreen = useRef();
   return (
     <section
-      className={`LockScreen relative w-screen h-screen flex flex-col gap-4 justify-center items-center z-50  ${
+      className={`LockScreen relative w-screen h-screen flex flex-col gap-4 justify-center items-center bg-black/90 z-50  ${
         isLocked ? 'active' : ''
       }`}
       ref={LockScreen}
