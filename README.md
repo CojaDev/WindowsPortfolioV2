@@ -1,6 +1,6 @@
-# Windows-Inspired Portfolio
+# Windows Portfolio
 
-![Windows-Inspired Portfolio](screenshot.png)
+![Windows Portfolio](screenshot.png)
 
 <p align="center">
   <img src="Screenshot_2.png" alt="Screenshot 2" width="170">
