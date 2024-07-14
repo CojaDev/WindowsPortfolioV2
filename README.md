@@ -2,6 +2,12 @@
 
 ![Windows-Inspired Portfolio](screenshot.png)
 
+<p align="center">
+  <img src="screenshot2.png" alt="Screenshot 2" width="200">
+  <img src="screenshot3.png" alt="Screenshot 3" width="200">
+  <img src="screenshot4.png" alt="Screenshot 4" width="200">
+</p>
+
 ## Overview
 
 Welcome to the Windows-Inspired Portfolio project! This project is a web-based portfolio designed to mimic the look and feel of the Windows operating system. It includes a start menu, desktop, and interactive apps that showcase your projects, resume, and contact information in a unique and nostalgic way.
@@ -42,26 +48,3 @@ You can see a live demo of this portfolio [here](https://cojadev.github.io/Windo
 
    ```bash
    git clone https://github.com/CojaDev/WindowsPortfolio
-   ```
-
-# Customization
-
-You can customize the portfolio's appearance and content to suit your preferences:
-
-- **Themes**: Change the color scheme and styling in the `css` directory.
-
-- **Icons**: Replace the icons in the `apps/assets/icons` directory with your own icons.
-
-- **Fonts**: Modify the font styles in the `css` directory by editing the CSS files.
-
-## Contributing
-
-Contributions to this project are welcome! If you have ideas for improvements or find bugs, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Thank you for using the Windows-Inspired Portfolio project. We hope it helps you showcase your work in a creative and engaging way! If you have any questions or need assistance, feel free to reach out to us.
