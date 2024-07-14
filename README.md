@@ -1,6 +1,8 @@
 # Windows-Inspired Portfolio
 
 ![Windows-Inspired Portfolio](screenshot.png)
+![Windows-Inspired Portfolio](screenshot.png)
+![Windows-Inspired Portfolio](screenshot.png)
 
 ## Overview
 
