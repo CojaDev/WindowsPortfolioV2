@@ -3,9 +3,11 @@
 ![Windows-Inspired Portfolio](screenshot.png)
 
 <p align="center">
-  <img src="screenshot2.png" alt="Screenshot 2" width="200">
-  <img src="screenshot3.png" alt="Screenshot 3" width="200">
-  <img src="screenshot4.png" alt="Screenshot 4" width="200">
+  <img src="Screenshot_2.png" alt="Screenshot 2" width="200">
+  <img src="Screenshot_3.png" alt="Screenshot 3" width="200">
+  <img src="Screenshot_4.png" alt="Screenshot 4" width="200">
+  <img src="Screenshot_5.png" alt="Screenshot 4" width="200">
+  <img src="Screenshot_6.png" alt="Screenshot 4" width="200">
 </p>
 
 ## Overview
