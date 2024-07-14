@@ -49,7 +49,7 @@ Contributions to this project are welcome! If you have ideas for improvements or
 
 2. Navigate to the project directory:
     ```sh
-    cd ecomFront
+    cd WindowsPortfolioV2
     ```
 
 3. Install the dependencies:
