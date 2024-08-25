@@ -43,7 +43,7 @@ const LockScreen = () => {
           width={1920}
           height={1080}
           draggable={false}
-          className="object-cover filter blur-sm"
+          className="object-cover w-full h-full filter blur-sm"
         />
       </div>
     </section>
