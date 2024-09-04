@@ -133,7 +133,7 @@ const Window2 = ({ activeApp, onClose, appName, appImg }) => {
           <div className=" w-full h-full">
             <iframe
               frameborder="0"
-              src="https://docs.google.com/document/d/1tbnWMFkKT0c4Mh_IKhrobi_yK8qtjL6vkCgvXWCIKI0/edit"
+              src="https://portfolio-coja.vercel.app/"
               allowfullscreen="true"
               className="w-full h-full"
             ></iframe>
@@ -146,7 +146,7 @@ const Window2 = ({ activeApp, onClose, appName, appImg }) => {
           <div className=" w-full h-full">
             <iframe
               frameborder="0"
-              src="https://docs.google.com/document/d/1tbnWMFkKT0c4Mh_IKhrobi_yK8qtjL6vkCgvXWCIKI0/edit"
+              src="https://portfolio-coja.vercel.app/"
               allowfullscreen="true"
               className="w-full h-full"
             ></iframe>
