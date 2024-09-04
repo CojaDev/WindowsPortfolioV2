@@ -133,7 +133,7 @@ const Window = ({ activeApp, onClose, appName, appImg }) => {
           <div className=" w-full h-full">
             <iframe
               frameborder="0"
-              src="https://portfolio-coja.vercel.app/"
+              src="https://portfolio-coja.vercel.app/#contact"
               allowfullscreen="true"
               className="w-full h-full"
             ></iframe>
